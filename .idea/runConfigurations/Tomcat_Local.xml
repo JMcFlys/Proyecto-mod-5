@@ -1,0 +1,29 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Tomcat Local" type="JavaEE.TomcatLocalRunConfigurationType" factoryName="Local" MAIN_CLASS_NAME="" SHOW_SETTINGS="false" USE_CLASSPATH_JAR="false" USE_ALTERNATIVE_JRE="false" JVM_ARGS="-Xmx512m" PASS_PARENT_ENVS="true">
+
+    <!-- ── Servidor ──────────────────────────────────────────────── -->
+    <!--
+      IMPORTANTE: Cambia "TOMCAT_HOME" por la ruta real de tu Tomcat.
+      Ejemplo Windows : C:\apache-tomcat-10.1.x
+      Ejemplo Mac/Linux: /opt/homebrew/opt/tomcat/libexec
+    -->
+    <option name="SERVER_NAME" value="Tomcat 10" />
+
+    <!-- ── Despliegue ────────────────────────────────────────────── -->
+    <deployment>
+      <artifact name="BibliotecaDigitalUNTEC:war exploded" />
+    </deployment>
+
+    <!-- ── URL de arranque ───────────────────────────────────────── -->
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="START_PAGE" value="http://localhost:8080/biblioteca-untec/" />
+    <option name="HTTP_PORT" value="8080" />
+    <option name="HTTPS_PORT" value="8443" />
+    <option name="AJP_PORT" value="8009" />
+    <option name="SHUTDOWN_PORT" value="8005" />
+
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
